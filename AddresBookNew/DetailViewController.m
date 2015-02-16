@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "MasterViewController.h"
 
 @interface DetailViewController ()
 
@@ -21,16 +22,29 @@
         _detailItem = newDetailItem;
             
         // Update the view.
-        [self configureView];
     }
+}
+
+- (IBAction)saveButton:(id)sender {
+    
+    [self.detailItem setValue:_peopleName.text forKey:@"name"];
+    [self.detailItem setValue:_peopleSurname.text forKey:@"surname"];
+    [self.detailItem setValue:_peoplePhone.text forKey:@"phone"];
+    [_delegate saveContext];
+    
 }
 
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+
+        self.peopleName.text = [[self.detailItem valueForKey:@"name"] description];
+        self.peopleSurname.text = [[self.detailItem valueForKey:@"surname"] description];
+        self.peoplePhone.text = [[self.detailItem valueForKey:@"phone"] description];
+        
     }
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

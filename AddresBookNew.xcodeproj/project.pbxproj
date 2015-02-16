@@ -45,6 +45,7 @@
 		842854341A8407A900C02959 /* AddresBookNewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddresBookNewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842854391A8407A900C02959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8428543A1A8407A900C02959 /* AddresBookNewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddresBookNewTests.m; sourceTree = "<group>"; };
+		843DEF9A1A87F2D800F3869E /* MasterContextDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterContextDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 				8428542D1A8407A900C02959 /* LaunchScreen.xib */,
 				8428541F1A8407A900C02959 /* AddresBookNew.xcdatamodeld */,
 				842854181A8407A900C02959 /* Supporting Files */,
+				843DEF9A1A87F2D800F3869E /* MasterContextDelegate.h */,
 			);
 			path = AddresBookNew;
 			sourceTree = "<group>";
@@ -424,6 +426,7 @@
 				842854401A8407A900C02959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		842854411A8407A900C02959 /* Build configuration list for PBXNativeTarget "AddresBookNewTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +435,7 @@
 				842854431A8407A900C02959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

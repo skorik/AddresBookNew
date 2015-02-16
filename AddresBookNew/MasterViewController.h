@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "MasterContextDelegate.h"
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, MasterContextDelegate>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 
